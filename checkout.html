@@ -15,7 +15,7 @@
 <body>
   <div class="container-main">
 
-    <!-- Sidebar done --> 
+    <!-- Sidebar done -->
     <aside class="panel-sidebar">
       <div class="panel-header">
         <h2 class="panel-logo">PUNCHING</h2>
@@ -177,12 +177,13 @@
           </div>
           <div class="legend-item">
             <span class="legend-dot late"></span>
-            <span class="legend-label">Late</span>
+            <span class="legend-label">Holidays</span>
           </div>
           <div class="legend-item">
             <span class="legend-dot absent"></span>
             <span class="legend-label">Absent</span>
           </div>
+
         </div>
 
         <!-- Attendance Cards Grid -->
@@ -200,25 +201,32 @@
                 <span class="time-label">Check Out</span>
                 <span class="time-label">Duration</span>
               </div>
-              <div class="time-row">
-                <span class="time-value">9:00 AM</span>
-                <span class="time-value">2:00 PM</span>
-                <span class="time-value">5hr</span>
-              </div>
-              <div class="time-row">
-                <span class="time-value">3:00 PM</span>
-                <span class="time-value">6:00 PM</span>
-                <span class="time-value">3hr</span>
+              <div class="scroll-present" style="height: 70px;overflow: scroll;">
+                <div class="time-row">
+                  <span class="time-value">9:00 AM</span>
+                  <span class="time-value">2:00 PM</span>
+                  <span class="time-value">5hr</span>
+                </div>
+                <div class="time-row">
+                  <span class="time-value">3:00 PM</span>
+                  <span class="time-value">6:00 PM</span>
+                  <span class="time-value">3hr</span>
+                </div>
+                <div class="time-row">
+                  <span class="time-value">3:00 PM</span>
+                  <span class="time-value">6:00 PM</span>
+                  <span class="time-value">3hr</span>
+                </div>
               </div>
             </div>
             <div class="total-hours">Total Hours Worked <span>8hr</span></div>
           </div>
 
-          <!-- Card 2 - Thursday Late -->
+          <!-- Card 2 - Thursday Holidays -->
           <div class="attendance-card card-late">
             <div class="card-header">
               <h3>Thu,Aug 24,2025</h3>
-              <span class="status-badge badge-late">Late</span>
+              <span class="status-badge badge-late">Holidays</span>
             </div>
             <div class="time-entries">
               <div class="time-row">
@@ -227,17 +235,17 @@
                 <span class="time-label">Duration</span>
               </div>
               <div class="time-row">
-                <span class="time-value">9:00 AM</span>
-                <span class="time-value">2:00 PM</span>
-                <span class="time-value">5hr</span>
+                <span class="time-value">0:00 AM</span>
+                <span class="time-value">0:00 PM</span>
+                <span class="time-value">0hr</span>
               </div>
               <div class="time-row">
-                <span class="time-value">3:00 PM</span>
-                <span class="time-value">6:00 PM</span>
-                <span class="time-value">3hr</span>
+                <span class="time-value">0:00 PM</span>
+                <span class="time-value">0:00 PM</span>
+                <span class="time-value">0hr</span>
               </div>
             </div>
-            <div class="total-hours">Total Hours Worked <span>8hr</span></div>
+            <div class="total-hours">Total Hours Worked <span>0hr</span></div>
           </div>
 
           <!-- Card 3 - Friday Absent -->
@@ -253,98 +261,20 @@
                 <span class="time-label">Duration</span>
               </div>
               <div class="time-row">
-                <span class="time-value">9:00 AM</span>
-                <span class="time-value">2:00 PM</span>
-                <span class="time-value">5hr</span>
+                <span class="time-value">0:00 AM</span>
+                <span class="time-value">0:00 PM</span>
+                <span class="time-value">0hr</span>
               </div>
               <div class="time-row">
-                <span class="time-value">3:00 PM</span>
-                <span class="time-value">6:00 PM</span>
-                <span class="time-value">3hr</span>
+                <span class="time-value">0:00 PM</span>
+                <span class="time-value">0:00 PM</span>
+                <span class="time-value">0hr</span>
               </div>
             </div>
-            <div class="total-hours">Total Hours Worked <span>8hr</span></div>
+            <div class="total-hours">Total Hours Worked <span>0hr</span></div>
           </div>
 
-          <!-- Card 4 - Saturday Present -->
-          <div class="attendance-card card-present">
-            <div class="card-header">
-              <h3>Sat,Aug 23,2025</h3>
-              <span class="status-badge badge-present">Present</span>
-            </div>
-            <div class="time-entries">
-              <div class="time-row">
-                <span class="time-label">Check In</span>
-                <span class="time-label">Check Out</span>
-                <span class="time-label">Duration</span>
-              </div>
-              <div class="time-row">
-                <span class="time-value">9:00 AM</span>
-                <span class="time-value">2:00 PM</span>
-                <span class="time-value">5hr</span>
-              </div>
-              <div class="time-row">
-                <span class="time-value">3:00 PM</span>
-                <span class="time-value">6:00 PM</span>
-                <span class="time-value">3hr</span>
-              </div>
-            </div>
-            <div class="total-hours">Total Hours Worked <span>8hr</span></div>
-          </div>
-
-          <!-- Card 5 - Sunday Holidays -->
-          <div class="attendance-card card-holiday">
-            <div class="card-header">
-              <h3>Sun,Aug 25,2025</h3>
-              <span class="status-badge badge-holiday">Holidays</span>
-            </div>
-            <div class="time-entries">
-              <div class="time-row">
-                <span class="time-label">Check In</span>
-                <span class="time-label">Check Out</span>
-                <span class="time-label">Duration</span>
-              </div>
-              <div class="time-row">
-                <span class="time-value">9:00 AM</span>
-                <span class="time-value">2:00 PM</span>
-                <span class="time-value">5hr</span>
-              </div>
-              <div class="time-row">
-                <span class="time-value">3:00 PM</span>
-                <span class="time-value">6:00 PM</span>
-                <span class="time-value">3hr</span>
-              </div>
-            </div>
-            <div class="total-hours">Total Hours Worked <span>8hr</span></div>
-          </div>
-
-          <!-- Card 6 - Wednesday Absent -->
-          <div class="attendance-card card-absent">
-            <div class="card-header">
-              <h3>Wed,Aug 25,2025</h3>
-              <span class="status-badge badge-absent">Absent</span>
-            </div>
-            <div class="time-entries">
-              <div class="time-row">
-                <span class="time-label">Check In</span>
-                <span class="time-label">Check Out</span>
-                <span class="time-label">Duration</span>
-              </div>
-              <div class="time-row">
-                <span class="time-value">9:00 AM</span>
-                <span class="time-value">2:00 PM</span>
-                <span class="time-value">5hr</span>
-              </div>
-              <div class="time-row">
-                <span class="time-value">3:00 PM</span>
-                <span class="time-value">6:00 PM</span>
-                <span class="time-value">3hr</span>
-              </div>
-            </div>
-            <div class="total-hours">Total Hours Worked <span>8hr</span></div>
-          </div>
-
-          <!-- Card 7 - Wednesday Present -->
+          <!-- Card 1 - Wednesday Present -->
           <div class="attendance-card card-present">
             <div class="card-header">
               <h3>Wed,Aug 23,2025</h3>
@@ -356,25 +286,32 @@
                 <span class="time-label">Check Out</span>
                 <span class="time-label">Duration</span>
               </div>
-              <div class="time-row">
-                <span class="time-value">9:00 AM</span>
-                <span class="time-value">2:00 PM</span>
-                <span class="time-value">5hr</span>
-              </div>
-              <div class="time-row">
-                <span class="time-value">3:00 PM</span>
-                <span class="time-value">6:00 PM</span>
-                <span class="time-value">3hr</span>
+              <div class="scroll-present" style="height: 70px;overflow: scroll;">
+                <div class="time-row">
+                  <span class="time-value">9:00 AM</span>
+                  <span class="time-value">2:00 PM</span>
+                  <span class="time-value">5hr</span>
+                </div>
+                <div class="time-row">
+                  <span class="time-value">3:00 PM</span>
+                  <span class="time-value">6:00 PM</span>
+                  <span class="time-value">3hr</span>
+                </div>
+                <div class="time-row">
+                  <span class="time-value">3:00 PM</span>
+                  <span class="time-value">6:00 PM</span>
+                  <span class="time-value">3hr</span>
+                </div>
               </div>
             </div>
             <div class="total-hours">Total Hours Worked <span>8hr</span></div>
           </div>
 
-          <!-- Card 8 - Thursday Late -->
+          <!-- Card 2 - Thursday Holidays -->
           <div class="attendance-card card-late">
             <div class="card-header">
               <h3>Thu,Aug 24,2025</h3>
-              <span class="status-badge badge-late">Late</span>
+              <span class="status-badge badge-late">Holidays</span>
             </div>
             <div class="time-entries">
               <div class="time-row">
@@ -383,20 +320,20 @@
                 <span class="time-label">Duration</span>
               </div>
               <div class="time-row">
-                <span class="time-value">9:00 AM</span>
-                <span class="time-value">2:00 PM</span>
-                <span class="time-value">5hr</span>
+                <span class="time-value">0:00 AM</span>
+                <span class="time-value">0:00 PM</span>
+                <span class="time-value">0hr</span>
               </div>
               <div class="time-row">
-                <span class="time-value">3:00 PM</span>
-                <span class="time-value">6:00 PM</span>
-                <span class="time-value">3hr</span>
+                <span class="time-value">0:00 PM</span>
+                <span class="time-value">0:00 PM</span>
+                <span class="time-value">0hr</span>
               </div>
             </div>
-            <div class="total-hours">Total Hours Worked <span>8hr</span></div>
+            <div class="total-hours">Total Hours Worked <span>0hr</span></div>
           </div>
 
-          <!-- Card 9 - Friday Absent -->
+          <!-- Card 3 - Friday Absent -->
           <div class="attendance-card card-absent">
             <div class="card-header">
               <h3>Fri,Aug 25,2025</h3>
@@ -409,18 +346,19 @@
                 <span class="time-label">Duration</span>
               </div>
               <div class="time-row">
-                <span class="time-value">9:00 AM</span>
-                <span class="time-value">2:00 PM</span>
-                <span class="time-value">5hr</span>
+                <span class="time-value">0:00 AM</span>
+                <span class="time-value">0:00 PM</span>
+                <span class="time-value">0hr</span>
               </div>
               <div class="time-row">
-                <span class="time-value">3:00 PM</span>
-                <span class="time-value">6:00 PM</span>
-                <span class="time-value">3hr</span>
+                <span class="time-value">0:00 PM</span>
+                <span class="time-value">0:00 PM</span>
+                <span class="time-value">0hr</span>
               </div>
             </div>
-            <div class="total-hours">Total Hours Worked <span>8hr</span></div>
+            <div class="total-hours">Total Hours Worked <span>0hr</span></div>
           </div>
+
 
         </div>
 

@@ -104,7 +104,7 @@ body {
   font-weight: 600;
 }
 
-.active{
+.active {
   background: #F8F8F8;
   color: #000;
   font-weight: 900;
@@ -1343,6 +1343,7 @@ body {
 }
 
 .input-field input,
+.input-field textarea,
 .input-field select {
   width: 100%;
   padding: 10px 12px;
@@ -1426,44 +1427,44 @@ body {
 
 
 .menu-container {
-      position: relative;
-      display: inline-block;
-    }
+  position: relative;
+  display: inline-block;
+}
 
-    .menu-dots {
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 5px;
-    }
+.menu-dots {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
 
-    .menu-popup {
-      display: none;
-      /* initially hidden */
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-      padding: 5px 0;
-      z-index: 10;
-      width: 100px;
-    }
+.menu-popup {
+  display: none;
+  /* initially hidden */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 5px 0;
+  z-index: 10;
+  width: 100px;
+}
 
-    .menu-popup button {
-      width: 100%;
-      padding: 5px 10px;
-      background: none;
-      border: none;
-      text-align: left;
-      cursor: pointer;
-    }
+.menu-popup button {
+  width: 100%;
+  padding: 5px 10px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
 
-    .menu-popup button:hover {
-      background-color: #f0f0f0;
-    }
+.menu-popup button:hover {
+  background-color: #f0f0f0;
+}
 
 /* ===================== Check In-Out Page Styles ===================== */
 
@@ -1518,10 +1519,11 @@ body {
   display: flex;
   gap: 24px;
   padding: 16px 24px;
-  background: #f9fafb;
+  background: #ffffff;
   border-radius: 8px;
   margin-bottom: 24px;
   border: 1px solid #e5e7eb;
+  max-width: 320px;
 }
 
 .legend-item {
@@ -1564,7 +1566,7 @@ body {
 .attendance-card {
   background: #fff;
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
+  border-radius: 0px;
   padding: 20px;
   transition: all 0.2s ease;
 }
@@ -1673,6 +1675,8 @@ body {
   font-size: 12px;
   color: #6b7280;
   text-align: right;
+  display: flex;
+  justify-content: space-between;
 }
 
 .total-hours span {
@@ -1798,7 +1802,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   background: #3b82f6;
   color: #fff;
   border: none;
@@ -2176,12 +2180,7 @@ body {
   font-weight: 500;
 }
 
-.status-badge::before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
+
 
 .status-badge.present {
   background: #dbeafe;
@@ -2276,4 +2275,16 @@ body {
   .pagination {
     flex-wrap: wrap;
   }
+}
+
+.scroll-present {
+  height: 70px;
+  overflow: scroll;
+  scrollbar-width: none;
+
+}
+
+.scroll-present::-webkit-scrollbar {
+  display: none;
+
 }

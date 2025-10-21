@@ -172,7 +172,7 @@
               <option>On Hold</option>
             </select>
           </div>
-          <button class="btn-add">
+          <button class="btn-add" data-bs-toggle="modal" data-bs-target="#myModal">
             <span>+</span>
             ADD
           </button>
@@ -184,7 +184,7 @@
             <thead>
               <tr>
                 <th>
-                  Performance Project 
+                  Performance Project
                   <img src="img/down.svg" alt="Sort" class="sort-icon">
                 </th>
                 <th>Start Date</th>
@@ -201,9 +201,9 @@
                   <div class="project-name">
                     <div class="progress-circle pink">
                       <svg width="52" height="52">
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#fce7f3" stroke-width="4"/>
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#ec4899" stroke-width="4" 
-                          stroke-dasharray="138.2" stroke-dashoffset="93.4" transform="rotate(-90 26 26)"/>
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#fce7f3" stroke-width="4" />
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#ec4899" stroke-width="4"
+                          stroke-dasharray="138.2" stroke-dashoffset="93.4" transform="rotate(-90 26 26)" />
                       </svg>
                       <span class="progress-text">32%</span>
                     </div>
@@ -215,9 +215,20 @@
                 <td>200 hr</td>
                 <td>180 hr</td>
                 <td>
-                  <button class="btn-more">
-                    <img src="img/more.svg" alt="More">
-                  </button>
+                  <div class="menu-container">
+                    <button class="menu-dots">
+                      <img src="img/more.svg" alt="More">
+                    </button>
+                    <div class="menu-popup">
+                      <button class="delete">Edit</button>
+                      <button class="delete">Delete</button>
+                      <button class="delete">Hold</button>
+                      <button class="delete">Completed</button>
+                      <button class="delete">Task</button>
+                      <button class="delete">History</button>
+                      <button class="delete">Feedback</button>
+                    </div>
+                  </div>
                 </td>
               </tr>
 
@@ -227,9 +238,9 @@
                   <div class="project-name">
                     <div class="progress-circle blue">
                       <svg width="52" height="52">
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#dbeafe" stroke-width="4"/>
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#3b82f6" stroke-width="4" 
-                          stroke-dasharray="138.2" stroke-dashoffset="24.9" transform="rotate(-90 26 26)"/>
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#dbeafe" stroke-width="4" />
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#3b82f6" stroke-width="4"
+                          stroke-dasharray="138.2" stroke-dashoffset="24.9" transform="rotate(-90 26 26)" />
                       </svg>
                       <span class="progress-text">82%</span>
                     </div>
@@ -241,9 +252,20 @@
                 <td>160 hr</td>
                 <td>140 hr</td>
                 <td>
-                  <button class="btn-more">
-                    <img src="img/more.svg" alt="More">
-                  </button>
+                  <div class="menu-container">
+                    <button class="menu-dots">
+                      <img src="img/more.svg" alt="More">
+                    </button>
+                    <div class="menu-popup">
+                      <button class="delete">Edit</button>
+                      <button class="delete">Delete</button>
+                      <button class="delete">Hold</button>
+                      <button class="delete">Completed</button>
+                      <button class="delete">Task</button>
+                      <button class="delete">History</button>
+                      <button class="delete">Feedback</button>
+                    </div>
+                  </div>
                 </td>
               </tr>
 
@@ -253,9 +275,9 @@
                   <div class="project-name">
                     <div class="progress-circle yellow">
                       <svg width="52" height="52">
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#fef3c7" stroke-width="4"/>
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#f59e0b" stroke-width="4" 
-                          stroke-dasharray="138.2" stroke-dashoffset="69.1" transform="rotate(-90 26 26)"/>
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#fef3c7" stroke-width="4" />
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#f59e0b" stroke-width="4"
+                          stroke-dasharray="138.2" stroke-dashoffset="69.1" transform="rotate(-90 26 26)" />
                       </svg>
                       <span class="progress-text">50%</span>
                     </div>
@@ -279,9 +301,9 @@
                   <div class="project-name">
                     <div class="progress-circle blue">
                       <svg width="52" height="52">
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#dbeafe" stroke-width="4"/>
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#3b82f6" stroke-width="4" 
-                          stroke-dasharray="138.2" stroke-dashoffset="24.9" transform="rotate(-90 26 26)"/>
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#dbeafe" stroke-width="4" />
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#3b82f6" stroke-width="4"
+                          stroke-dasharray="138.2" stroke-dashoffset="24.9" transform="rotate(-90 26 26)" />
                       </svg>
                       <span class="progress-text">82%</span>
                     </div>
@@ -305,9 +327,9 @@
                   <div class="project-name">
                     <div class="progress-circle pink">
                       <svg width="52" height="52">
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#fce7f3" stroke-width="4"/>
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#ec4899" stroke-width="4" 
-                          stroke-dasharray="138.2" stroke-dashoffset="93.4" transform="rotate(-90 26 26)"/>
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#fce7f3" stroke-width="4" />
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#ec4899" stroke-width="4"
+                          stroke-dasharray="138.2" stroke-dashoffset="93.4" transform="rotate(-90 26 26)" />
                       </svg>
                       <span class="progress-text">32%</span>
                     </div>
@@ -331,9 +353,9 @@
                   <div class="project-name">
                     <div class="progress-circle blue">
                       <svg width="52" height="52">
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#dbeafe" stroke-width="4"/>
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#3b82f6" stroke-width="4" 
-                          stroke-dasharray="138.2" stroke-dashoffset="24.9" transform="rotate(-90 26 26)"/>
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#dbeafe" stroke-width="4" />
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#3b82f6" stroke-width="4"
+                          stroke-dasharray="138.2" stroke-dashoffset="24.9" transform="rotate(-90 26 26)" />
                       </svg>
                       <span class="progress-text">82%</span>
                     </div>
@@ -357,9 +379,9 @@
                   <div class="project-name">
                     <div class="progress-circle yellow">
                       <svg width="52" height="52">
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#fef3c7" stroke-width="4"/>
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#f59e0b" stroke-width="4" 
-                          stroke-dasharray="138.2" stroke-dashoffset="69.1" transform="rotate(-90 26 26)"/>
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#fef3c7" stroke-width="4" />
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#f59e0b" stroke-width="4"
+                          stroke-dasharray="138.2" stroke-dashoffset="69.1" transform="rotate(-90 26 26)" />
                       </svg>
                       <span class="progress-text">50%</span>
                     </div>
@@ -383,9 +405,9 @@
                   <div class="project-name">
                     <div class="progress-circle pink">
                       <svg width="52" height="52">
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#fce7f3" stroke-width="4"/>
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#ec4899" stroke-width="4" 
-                          stroke-dasharray="138.2" stroke-dashoffset="93.4" transform="rotate(-90 26 26)"/>
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#fce7f3" stroke-width="4" />
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#ec4899" stroke-width="4"
+                          stroke-dasharray="138.2" stroke-dashoffset="93.4" transform="rotate(-90 26 26)" />
                       </svg>
                       <span class="progress-text">32%</span>
                     </div>
@@ -409,9 +431,9 @@
                   <div class="project-name">
                     <div class="progress-circle yellow">
                       <svg width="52" height="52">
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#fef3c7" stroke-width="4"/>
-                        <circle cx="26" cy="26" r="22" fill="none" stroke="#f59e0b" stroke-width="4" 
-                          stroke-dasharray="138.2" stroke-dashoffset="69.1" transform="rotate(-90 26 26)"/>
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#fef3c7" stroke-width="4" />
+                        <circle cx="26" cy="26" r="22" fill="none" stroke="#f59e0b" stroke-width="4"
+                          stroke-dasharray="138.2" stroke-dashoffset="69.1" transform="rotate(-90 26 26)" />
                       </svg>
                       <span class="progress-text">50%</span>
                     </div>
@@ -440,16 +462,16 @@
             <option>50 Rows</option>
             <option>100 Rows</option>
           </select>
-          
+
           <div class="pagination">
             <button class="page-btn">
-              <img src="img/left.svg" alt="Previous">
+              <img src="img/right.svg" alt="Previous">
             </button>
             <button class="page-btn active">1</button>
             <button class="page-btn">2</button>
             <button class="page-btn">3</button>
             <button class="page-btn">
-              <img src="img/right.svg" alt="Next">
+              <img src="img/left.svg" alt="Next">
             </button>
           </div>
         </div>
@@ -459,8 +481,83 @@
     </main>
 
   </div>
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class=" modal-content">
 
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-size: 20px;">Add Project</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="profile-form-box">
+            <form class="user-entry-form">
+              <div class="input-field">
+                <label>Project Name</label>
+                <input type="text" placeholder="First Name">
+              </div>
+              <div class="input-field">
+                <label>Project Manager</label>
+                <select>
+                  <option>Select</option>
+                  <option>Manpreet</option>
+                  <option>Rajeev</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label>Designation</label>
+                <textarea type="text" placeholder="Type here..."></textarea>
+              </div>
+
+              <div class="input-field">
+                <label>Start Date</label>
+                <input type="date" placeholder="">
+              </div>
+
+              <div class="input-field">
+                <label>End Date</label>
+                <input type="date" placeholder="r">
+              </div>
+
+              <div class="input-field">
+                <label>Total-hours</label>
+                <input type="number" placeholder="Enter Total-hours">
+              </div>
+
+              <div class="end-button">
+                <button type="submit" class="submit-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
   <script src="js/script.js"></script>
+  <script>
+    document.querySelectorAll('.menu-dots').forEach(button => {
+      button.addEventListener('click', (e) => {
+        const popup = button.nextElementSibling;
+        popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    // Close popup if clicked outside
+    document.addEventListener('click', (e) => {
+      document.querySelectorAll('.menu-popup').forEach(pp => {
+        if (!pp.contains(e.target) && !pp.previousElementSibling.contains(e.target)) {
+          pp.style.display = 'none';
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
