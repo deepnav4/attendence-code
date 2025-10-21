@@ -527,6 +527,27 @@
                 <input type="number" placeholder="Enter Total-hours">
               </div>
 
+              <!-- Hours Fraction Section -->
+              <div class="hours-fraction-section">
+                <h5 class="fraction-title">Hours Fraction</h5>
+                <div id="fractionFieldsContainer">
+                  <!-- Initial fraction field -->
+                  <div class="fraction-field-row">
+                    <div class="fraction-inputs">
+                      <select class="employee-select">
+                        <option>-- Employee --</option>
+                        <option>Manpreet</option>
+                        <option>Rajeev</option>
+                        <option>John Doe</option>
+                        <option>Jane Smith</option>
+                      </select>
+                      <input type="number" class="hour-input" placeholder="Hour">
+                      <button type="button" class="add-fraction-btn">Add +</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="end-button">
                 <button type="submit" class="submit-btn">Submit</button>
               </div>
@@ -557,6 +578,63 @@
         }
       });
     });
+
+    // Hours Fraction Dynamic Fields Logic
+    const container = document.getElementById('fractionFieldsContainer');
+
+    // Function to update all buttons (add last one, remove for others)
+    function updateButtons() {
+      const allRows = container.querySelectorAll('.fraction-field-row');
+      
+      allRows.forEach((row, index) => {
+        const existingBtn = row.querySelector('.add-fraction-btn, .remove-fraction-btn');
+        
+        // If this is the last row, show Add button
+        if (index === allRows.length - 1) {
+          if (existingBtn.classList.contains('remove-fraction-btn')) {
+            existingBtn.textContent = 'Add +';
+            existingBtn.className = 'add-fraction-btn';
+          }
+        } else {
+          // For other rows, show Remove button
+          if (existingBtn.classList.contains('add-fraction-btn')) {
+            existingBtn.textContent = 'Remove';
+            existingBtn.className = 'remove-fraction-btn';
+          }
+        }
+      });
+    }
+
+    // Event delegation for Add/Remove buttons
+    container.addEventListener('click', function(e) {
+      if (e.target.classList.contains('add-fraction-btn')) {
+        // Add new field
+        const newRow = document.createElement('div');
+        newRow.className = 'fraction-field-row';
+        newRow.innerHTML = `
+          <div class="fraction-inputs">
+            <select class="employee-select">
+              <option>-- Employee --</option>
+              <option>Manpreet</option>
+              <option>Rajeev</option>
+              <option>John Doe</option>
+              <option>Jane Smith</option>
+            </select>
+            <input type="number" class="hour-input" placeholder="Hour">
+            <button type="button" class="add-fraction-btn">Add +</button>
+          </div>
+        `;
+        container.appendChild(newRow);
+        updateButtons();
+      } else if (e.target.classList.contains('remove-fraction-btn')) {
+        // Remove this field
+        e.target.closest('.fraction-field-row').remove();
+        updateButtons();
+      }
+    });
+
+    // Initialize buttons on page load
+    updateButtons();
   </script>
 </body>
 
