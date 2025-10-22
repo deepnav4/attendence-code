@@ -2860,3 +2860,174 @@ body {
     justify-content: center;
   }
 }
+
+/* ==================== Notification Popup Styles ==================== */
+
+.hidden {
+  display: none !important;
+}
+
+.notification-popup {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  width: 380px;
+  max-height: 600px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 16px 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.notification-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.notification-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+  line-height: 1;
+}
+
+.notification-close:hover {
+  color: #1f2937;
+}
+
+.notification-list {
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+/* Custom Scrollbar for Notification List */
+.notification-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.notification-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.notification-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.notification-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.notification-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s ease;
+}
+
+.notification-item:hover {
+  background-color: #f9fafb;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.notification-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.notification-text {
+  font-size: 13px;
+  color: #1f2937;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.notification-text strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+.notification-time {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.notification-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+  flex-shrink: 0;
+}
+
+.notification-delete:hover {
+  opacity: 1;
+}
+
+.notification-delete-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Responsive for Notification Popup */
+@media (max-width: 768px) {
+  .notification-popup {
+    width: 320px;
+    max-height: 500px;
+  }
+
+  .notification-list {
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 480px) {
+  .notification-popup {
+    top: 70px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+  }
+}

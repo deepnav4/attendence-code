@@ -133,7 +133,7 @@
       <header class="header-main">
         <button class="btn-toggle" id="btn-toggle">☰</button>
         <div class="header-right-section">
-          <img src="img/noti.svg">
+          <img src="img/noti.svg" onclick="toggleNotificationPopup()">
           <div class="dropdown-wrapper">
             <div class="dropdown-toggles" id="dropdown-btn">
               <img src="img/user-img.svg" alt="User Avatar" class="user-avatar">
@@ -447,6 +447,129 @@
     </div>
   </div>
 
+  <!-- Notification Popup -->
+  <div class="notification-popup hidden" id="notificationPopup">
+    <div class="notification-header">
+      <h3>Notifications</h3>
+      <button class="notification-close" onclick="toggleNotificationPopup()">✕</button>
+    </div>
+    
+    <div class="notification-list">
+      <!-- Notification 1 -->
+      <div class="notification-item">
+        <img src="img/user-img.svg" alt="Kane william" class="notification-avatar">
+        <div class="notification-content">
+          <p class="notification-text"><strong>Kane william</strong> applied leave from 2025-03-06 to 2025-03-06</p>
+          <span class="notification-time">5 march at 11:33 am</span>
+        </div>
+        <button class="notification-delete">
+          <svg class="notification-delete-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Notification 2 -->
+      <div class="notification-item">
+        <img src="img/user-img.svg" alt="Michael Johnson" class="notification-avatar">
+        <div class="notification-content">
+          <p class="notification-text"><strong>Michael Johnson</strong> applied leave from 2025-03-06 to 2025-03-06</p>
+          <span class="notification-time">5 march at 11:33 am</span>
+        </div>
+        <button class="notification-delete">
+          <svg class="notification-delete-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Notification 3 -->
+      <div class="notification-item">
+        <img src="img/user-img.svg" alt="Robert Williams" class="notification-avatar">
+        <div class="notification-content">
+          <p class="notification-text"><strong>Robert Williams</strong> applied leave from 2025-03-06 to 2025-03-06</p>
+          <span class="notification-time">5 march at 11:33 am</span>
+        </div>
+        <button class="notification-delete">
+          <svg class="notification-delete-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Notification 4 -->
+      <div class="notification-item">
+        <img src="img/user-img.svg" alt="David Brown" class="notification-avatar">
+        <div class="notification-content">
+          <p class="notification-text"><strong>David Brown</strong> applied leave from 2025-03-06 to 2025-03-06</p>
+          <span class="notification-time">5 march at 11:33 am</span>
+        </div>
+        <button class="notification-delete">
+          <svg class="notification-delete-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Notification 5 -->
+      <div class="notification-item">
+        <img src="img/user-img.svg" alt="Andrew Taylor" class="notification-avatar">
+        <div class="notification-content">
+          <p class="notification-text"><strong>Andrew Taylor</strong> applied leave from 2025-03-06 to 2025-03-06</p>
+          <span class="notification-time">5 march at 11:33 am</span>
+        </div>
+        <button class="notification-delete">
+          <svg class="notification-delete-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Notification 6 -->
+      <div class="notification-item">
+        <img src="img/user-img.svg" alt="Daniel White" class="notification-avatar">
+        <div class="notification-content">
+          <p class="notification-text"><strong>Daniel White</strong> applied leave from 2025-03-06 to 2025-03-06</p>
+          <span class="notification-time">5 march at 11:33 am</span>
+        </div>
+        <button class="notification-delete">
+          <svg class="notification-delete-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Notification 7 -->
+      <div class="notification-item">
+        <img src="img/user-img.svg" alt="Ryan Harris" class="notification-avatar">
+        <div class="notification-content">
+          <p class="notification-text"><strong>Ryan Harris</strong> applied leave from 2025-03-06 to 2025-03-06</p>
+          <span class="notification-time">5 march at 11:33 am</span>
+        </div>
+        <button class="notification-delete">
+          <svg class="notification-delete-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Notification 8 -->
+      <div class="notification-item">
+        <img src="img/user-img.svg" alt="Andrew Taylor" class="notification-avatar">
+        <div class="notification-content">
+          <p class="notification-text"><strong>Andrew Taylor</strong> applied leave from 2025-03-06 to 2025-03-06</p>
+          <span class="notification-time">5 march at 11:33 am</span>
+        </div>
+        <button class="notification-delete">
+          <svg class="notification-delete-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
 
   <script>
     // Sidebar toggle
@@ -539,6 +662,36 @@
         }
       });
     });
+
+
+    function toggleNotificationPopup() {
+      console.log('clicked');
+      const popup = document.querySelector('#notificationPopup');
+      if (popup) {
+        popup.classList.toggle('hidden');
+        console.log('Popup toggled, hidden:', popup.classList.contains('hidden'));
+      } else {
+        console.error('Notification popup not found!');
+      }
+    }
+
+    // Close popup when clicking outside
+    document.addEventListener('click', function(e) {
+      const popup = document.querySelector('#notificationPopup');
+      const notiBtn = document.querySelector('img[src="img/noti.svg"]');
+      
+      if (popup && notiBtn && !popup.contains(e.target) && e.target !== notiBtn) {
+        popup.classList.add('hidden');
+      }
+    });
+
+    // Prevent popup from closing when clicking inside it
+    const popup = document.querySelector('#notificationPopup');
+    if (popup) {
+      popup.addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+    }
   </script>
 </body>
 
