@@ -2377,7 +2377,354 @@ body {
   height: 70px;
   overflow: scroll;
   scrollbar-width: none;
+}
 
+/* ==================== Leave Page Styles ==================== */
+
+.leave-container {
+  padding: 24px 32px;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.leave-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.leave-header-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.search-box-leave {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon-leave {
+  position: absolute;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  opacity: 0.5;
+}
+
+.search-input-leave {
+  padding: 8px 12px 8px 38px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  color: #6b7280;
+  width: 200px;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.search-input-leave:focus {
+  border-color: #3b82f6;
+}
+
+.filter-select-leave {
+  padding: 8px 32px 8px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  color: #1f2937;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+.filter-select-leave:hover {
+  border-color: #9ca3af;
+}
+
+.filter-select-leave:focus {
+  border-color: #3b82f6;
+}
+
+/* Leave Content Layout */
+.leave-content-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 24px;
+  height: calc(100vh - 200px);
+  align-items: start;
+}
+
+/* Leave List Section */
+.leave-list-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 100%;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+/* Custom Scrollbar for Leave List */
+.leave-list-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.leave-list-section::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.leave-list-section::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.leave-list-section::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.leave-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.leave-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-color: #d1d5db;
+}
+
+.leave-card.active-leave {
+  border-color: #3b82f6;
+  background: #f0f9ff;
+}
+
+.leave-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.leave-user-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.leave-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.leave-user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.leave-user-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.leave-type-text {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.leave-type-value {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.leave-date-badge {
+  font-size: 11px;
+  color: #3b82f6;
+  background: #eff6ff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.leave-message {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Leave Detail Section */
+.leave-detail-section {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  position: sticky;
+  top: 0;
+  max-height: calc(100vh - 200px);
+  overflow-y: hidden;
+}
+
+.leave-detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leave-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.detail-user-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.detail-user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.detail-user-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-user-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.detail-leave-type {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.detail-leave-value {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.detail-date-badge {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Subject Section */
+.leave-subject-section {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.subject-label {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.subject-value {
+  color: #1f2937;
+  font-weight: 500;
+}
+
+/* Leave Message Section */
+.leave-message-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.leave-detail-message {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.leave-regards {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .leave-content-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .leave-detail-section {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .leave-container {
+    padding: 16px;
+  }
+
+  .leave-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .leave-header-right {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .search-input-leave {
+    width: 100%;
+  }
+
+  .filter-select-leave {
+    width: 100%;
+  }
 }
 
 .scroll-present::-webkit-scrollbar {

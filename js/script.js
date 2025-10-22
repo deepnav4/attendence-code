@@ -94,4 +94,69 @@ const toggleBtn = document.getElementById('btn-toggle');
     });
 
 
+// ==================== Leave Page Functionality ====================
+// Make leave cards clickable and update detail view on the right
+(function() {
+  // Wait for DOM to be fully loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLeaveCards);
+  } else {
+    initLeaveCards();
+  }
+
+  function initLeaveCards() {
+    const leaveCards = document.querySelectorAll('.leave-card');
+    
+    if (leaveCards.length === 0) {
+      console.log('No leave cards found on this page');
+      return;
+    }
+
+    console.log('Found ' + leaveCards.length + ' leave cards');
+    
+    leaveCards.forEach(function(card, index) {
+      card.addEventListener('click', function(e) {
+        console.log('Card clicked:', index);
+        
+        // Remove active class from all cards
+        leaveCards.forEach(function(c) {
+          c.classList.remove('active-leave');
+        });
+        
+        // Add active class to clicked card
+        this.classList.add('active-leave');
+        
+        // Get data from clicked card
+        const name = this.getAttribute('data-name');
+        const email = this.getAttribute('data-email');
+        const type = this.getAttribute('data-type');
+        const dateText = this.getAttribute('data-date-text');
+        const subject = this.getAttribute('data-subject');
+        const message = this.getAttribute('data-message');
+        
+        console.log('Data:', { name, email, type, dateText, subject });
+        
+        // Update detail section on the right
+        const detailName = document.getElementById('detail-name');
+        const detailType = document.getElementById('detail-type');
+        const detailDateText = document.getElementById('detail-date-text');
+        const detailSubject = document.getElementById('detail-subject');
+        const detailMessage = document.getElementById('detail-message');
+        const detailSignature = document.getElementById('detail-signature');
+        
+        if (detailName) {
+          detailName.textContent = name;
+          console.log('Updated name:', name);
+        }
+        if (detailType) detailType.textContent = type;
+        if (detailDateText) detailDateText.textContent = dateText;
+        if (detailSubject) detailSubject.textContent = subject;
+        if (detailMessage) detailMessage.textContent = message;
+        if (detailSignature) detailSignature.textContent = name;
+      });
+    });
+    
+    console.log('Leave cards initialized successfully');
+  }
+})();
   
