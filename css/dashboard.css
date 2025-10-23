@@ -265,17 +265,29 @@ body {
 }
 
 .welcome-header h1 {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 600;
   color: #0f172a;
   margin-bottom: 6px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
 }
 
 .welcome-header p {
   font-size: 15px;
   color: #64748b;
   font-weight: 400;
+}
+
+/* Unified Page Title Style for All Pages */
+.page-title,
+.employee-header h1,
+.leave-header h1,
+.welcome-header h1 {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  color: #0f172a !important;
+  margin: 0 !important;
+  letter-spacing: -0.3px !important;
 }
 
 /* Top Stats Section */
@@ -873,13 +885,6 @@ body {
 /* Employee Header */
 .employee-header {
   margin-bottom: 24px;
-}
-
-.employee-header h1 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #0f172a;
-  letter-spacing: -0.3px;
 }
 
 /* Actions Bar */
@@ -1569,13 +1574,6 @@ body {
   margin-bottom: 30px;
 }
 
-.checkout-header .page-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #1f2937;
-  margin: 0;
-}
-
 .checkout-filters {
   display: flex;
   gap: 12px;
@@ -1830,10 +1828,7 @@ body {
 }
 
 .projects-header .page-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #1f2937;
-  margin: 0;
+  /* Styles now unified in global page-title style */
 }
 
 /* Filters Section */
